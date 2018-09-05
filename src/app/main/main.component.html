@@ -1,0 +1,7 @@
+<div>
+  <h2>Main Component</h2>
+  <button (click)="changeInputToChild()">Send Input to Child</button>
+  <app-child-comp [inputFromMain]="inputToChild" (outputEvent)="handleOutput($event)"></app-child-comp>
+	<p>Input from child: {{outputFromChild}}</p>
+  <p>Input from service: {{serviceOutput}}</p>
+</div>
